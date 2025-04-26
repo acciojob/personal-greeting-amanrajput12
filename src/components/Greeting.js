@@ -1,6 +1,6 @@
 import React,{ useState } from "react";
 
- function Greeting(){
+ export function Greeting(){
     const [message,setMessage] = useState("");
     return( <div>
      <p>Enter your name:</p>
@@ -10,4 +10,3 @@ import React,{ useState } from "react";
     )
 }
 
-export default Greeting
