@@ -1,15 +1,14 @@
 
-import React, { useState } from "react";
+import React from "react";
 import './../styles/App.css';
+import  Greeting from "./Greeting.js";
 
 const App = () => {
-  const [message,setMessage] = useState("");
+ 
   return (
     <div>
-      
-       <p>Enter your name:</p>
-       <input type="text" onChange={(e)=>setMessage(e.target.value)} />
-       {message && <p>Hello, {message}!</p>}
+     
+       <Greeting/>
     </div>
   )
 }
