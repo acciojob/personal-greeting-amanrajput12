@@ -4,8 +4,8 @@ import React,{ useState } from "react";
     const [message,setMessage] = useState("");
     return( <div>
      <p>Enter your name:</p>
-       <input type="text" onChange={(e)=>setMessage(e.target.value)} />
-       {message && <p>Hello, {message}!</p>}   
+       <input onBlur={()=>setMessage("")} type="text" onChange={(e)=>setMessage(e.target.value)} />
+       {message && <p>Hello {message}!</p>}   
     </div>
     )
 }
